@@ -57,7 +57,7 @@ def get_extra_flags(url):
         return ''
 
 def download(url):
-    command = 'screen get_iplayer '
+    command = 'nohup get_iplayer '
     usr_flags = get_extra_flags(url)
     pid = get_pid(url)
     logging.debug('PID identified as %s from URL %s' % (pid, url))
